@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --purple: #a307d5;
+  --darkpurple: #442e4b;
+  --gray: #707070;
+  --lightgray: rgba(112, 112, 112, 0.65);
+  --goldenorange: #e8aa15;
+  --offwhite: #f9effc;
+}
+
+.main__container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--offwhite);
+}
+
+/* IMAGE SECTION */
+
+.section__image {
+  display: flex;
+  background-color: var(--purple);
+  width: 35%;
+}
+.image {
+  display: flex;
+  margin-left: 100px;
+  width: 100%;
+}
+
+/* LOGO SECTION */
+.section__logo {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-bottom: 60px;
+}
+
+.section__logo__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo {
+  font-size: 7rem;
+  color: var(--purple);
+  font-family: 'Monoton', 'Open Sans';
+}
+
+.icons {
+  margin-bottom: 100px;
+  color: var(--darkpurple);
+}
+
+.call {
+  font-size: 3rem;
+  margin: 20px;
+}
+
+.show,
+.present {
+  font-size: 3.5rem;
+  margin: 20px;
+}
+
+.landing__buttons {
+  padding: 5px 30px;
+  text-align: center;
+  font-size: 1.8rem;
+
+  background-color: var(--goldenorange);
+  border-radius: 20px;
+}
+
+.landing__button {
+  margin: 10px;
+  color: var(--offwhite);
+  text-decoration: none;
+}
+
+.landing__button:hover {
+  color: var(--darkpurple);
+  transition: ease-in 0.7s;
+}
+
+@media (max-width: 768px) {
+  .section__image {
+    display: none;
+  }
+
+  .section__logo {
+    width: 100%;
+  }
+
+  .landing__buttons {
+    background-color: transparent;
+  }
+
+  .landing__button {
+    margin: 5px;
+    color: var(--darkpurple);
+  }
+
+  .logo {
+    font-size: 5rem;
+  }
+
+  .icons {
+    margin-bottom: 50px;
+  }
+
+  .call {
+    font-size: 2rem;
+    margin: 10px;
+  }
+
+  .show,
+  .present {
+    font-size: 2.5rem;
+    margin: 10px;
+  }
+}

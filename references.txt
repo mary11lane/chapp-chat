@@ -1,0 +1,4 @@
+References:
+1) Conditional Formatting based on Window Width: https://stackoverflow.com/questions/39435395/reactjs-how-to-determine-if-the-application-is-being-viewed-on-mobile-or-deskto
+2) Light and Dark Mode set-up: https://traveling-coderman.net/code/light-mode/
+3) Toggle Switch from scratch: https://www.w3schools.com/howto/howto_css_switch.asp

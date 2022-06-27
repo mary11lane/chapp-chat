@@ -1,0 +1,102 @@
+/* GLOBAL STYLES */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-size: 1.5rem;
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* PAGE STYLES */
+
+/* MOBILE STYLES */
+
+/* DESKTOP STYLES */
+
+.container__uploadavatar {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-pop-up-component-bg-color);
+  /* backdrop-filter: blur(1rem); */
+  /* -webkit-backdrop-filter: blur(1rem); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper__uploadavatar_form {
+  /* border: 1px solid red; */
+  text-align: center;
+}
+
+.uploadavatar__form {
+  margin-bottom: 1rem;
+  /* border: 1px solid green; */
+  display: flex;
+  flex-direction: column;
+}
+
+.uploadavatar__header {
+  margin-bottom: 1rem;
+  color: var(--color-pop-up-component-header-color);
+}
+
+img {
+  width:50px
+}
+
+.uploadavatar__input {
+  margin-bottom: 4rem;
+  font-family: inherit;
+  padding: 0.6rem;
+  border-radius: 1rem;
+  border: 1px solid var(--color-pop-up-component-input-border-color);
+  text-align: center;
+  font-size: 1.4rem;
+  color: #707070;
+  text-align: center;
+}
+
+.uploadavatar__input:focus {
+  outline: none;
+}
+
+.uploadavatar__button {
+  margin: 0 auto;
+  width: 90%;
+  color: white;
+  background-color: var(--color-pop-up-component-button-bg-color);
+  border: none;
+  border-radius: 3rem;
+  cursor: pointer;
+  font-size: 1.9rem;
+  font-weight: 600;
+  padding: 1rem;
+  font-family: inherit;
+}
+
+.uploadavatar__goback {
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--color-pop-up-component-go-back-text-color);
+}
+
+.uploadavatar__goback:hover {
+  border-bottom: 1px solid var(--color-pop-up-component-go-back-text-color);
+}

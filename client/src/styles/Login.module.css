@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Login Page */
+
+.section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-pages-bg-color);
+  position: relative;
+  padding-bottom: 60px;
+}
+
+.section__container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.container__heading {
+  font-size: 3rem;
+  color: var(--color-pages-header-color);
+  margin-bottom: 1rem;
+}
+
+.container__subheading {
+  font-size: 1.3rem;
+  color: var(--color-pages-subtext-color);
+  text-align: left;
+}
+
+.container__form {
+  margin: 2.5rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__input__email,
+.form__input__password,
+.form__button {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'] {
+  background-color: var(--color-pages-input-bg-color);
+}
+
+.form__input__email,
+.form__input__password {
+  border-radius: 0.25rem;
+  border: none;
+  box-shadow: 1px 1px 1px 1px var(--color-pages-input-shadow-color),
+    -1px 1px 1px 1px var(--color-pages-input-shadow-color);
+  padding: 1rem 0 1rem 4rem;
+  /* background-color: var(--color-pages-input-bg-color); */
+}
+
+.form__input__email {
+  background: url('../assets/mail.svg') no-repeat;
+  background-position: 0.5rem;
+}
+
+.form__input__password {
+  background: url('../assets/key.svg') no-repeat;
+  background-position: 0.6rem;
+}
+
+.form__button {
+  font-family: 'Open Sans';
+  border: none;
+  border-radius: 5rem;
+  padding: 1.3rem 0;
+  color: var(--color-pages-button-text-color);
+  background-color: var(--color-pages-button-bg-color);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.error__message {
+  text-align: center;
+  color: red;
+  margin: 10px 0;
+}
+
+.container__text {
+  font-size: 1.3rem;
+  color: var(--color-pages-subtext-color);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.container__backlink {
+  color: var(--color-pages-link-color);
+  text-decoration: none;
+}
+
+.container__backlink:hover {
+  border-bottom: 1px solid var(--color-pages-link-color);
+}
+
+@media (min-width: 768px) {
+  .section {
+    text-align: center;
+  }
+
+  .section__container {
+    width: 30rem;
+  }
+
+  .container__subheading {
+    margin: 1rem 0;
+    text-align: center;
+  }
+}

@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* :root {
+  --purple: #a307d5;
+  --darkpurple: #442e4b;
+  --gray: #707070;
+  --lightgray: rgba(112, 112, 112, 0.65);
+  --goldenorange: #e8aa15;
+} */
+
+.main__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--color-pages-bg-color);
+  position: relative;
+  padding-bottom: 60px;
+}
+
+.main__section {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 10px;
+  color: var(--color-pages-header-color);
+}
+
+.form__registration {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.form__input {
+  margin: 8px 0;
+  padding: 12px 40px;
+  border: none;
+  box-shadow: 1px 1px 1px 1px var(--color-pages-input-shadow-color),
+    -1px 1px 1px 1px var(--color-pages-input-shadow-color);
+  border-radius: 0.25rem;
+}
+
+.username {
+  background: url('../assets/user.svg') no-repeat;
+  background-position: 0.5rem;
+}
+
+.email {
+  background: url('../assets/email.svg') no-repeat;
+  background-position: 0.5rem;
+}
+
+.password {
+  background: url('../assets/key.svg') no-repeat;
+  background-position: 0.5rem;
+}
+
+.form__button {
+  width: 300px;
+  height: 50px;
+  margin-top: 20px;
+  color: var(--color-pages-button-text-color);
+  background-color: var(--color-pages-button-bg-color);
+  border: none;
+  border-radius: 5rem;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+.error__message {
+  text-align: center;
+  color: red;
+  margin: 10px 0;
+}
+
+.container__text {
+  font-size: 1.3rem;
+  color: var(--color-pages-subtext-color);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.terms__text {
+  margin-top: 1rem;
+  width: 300px;
+  font-size: 1rem;
+  text-align: center;
+  color: var(--color-pages-subtext-color);
+}
+
+.login__text {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: var(--color-pages-subtext-color);
+}
+
+.backlink {
+  margin-left: 5px;
+  color: var(--color-pages-link-color);
+  text-decoration: none;
+}
+
+.backlink:hover {
+  border-bottom: 1px solid var(--color-pages-link-color);
+}

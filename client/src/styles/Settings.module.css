@@ -1,0 +1,316 @@
+/* GLOBAL STYLES */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-size: 1.5rem;
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* PAGE STYLES */
+
+/* MOBILE STYLES */
+
+.mobile_container_settings {
+width: 100%;
+/* border: 2px solid red; */
+display: flex;
+flex-direction: column;
+padding: 1.5rem;
+min-height: 100vh;
+
+}
+
+.mobile_wrapper_exit_button {
+  /* width: 100%; */
+
+}
+
+.mobile_exit_button {
+border: none;
+background-color: inherit;
+display: flex;
+}
+
+.mobile_exit_button_image {
+  align-self: center;
+  width: 4rem;
+  height: 4rem;
+}
+
+.mobile_wrapper_profile {
+  /* border: 2px solid cyan; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile_wrapper_avatar {
+  /* border: 2px solid blue; */
+  width: 15rem;
+  position: relative;
+}
+
+.mobile_avatar_image {
+width: 100%;
+border-radius: 50%;
+}
+
+.mobile_wrapper_change_avatar {
+position: absolute;
+bottom: 0;
+  /* border: 2px solid magenta; */
+  right: 0;
+  width: 4rem;
+  height: 4rem;
+  background: url('../assets/icons/edit_white.svg') no-repeat;
+  background-color: #a307d5;
+  border-radius: 50%;
+  background-position: center;
+  cursor: pointer;
+}
+
+.mobile_label_change_avatar {
+  width: 4rem;
+}
+
+.mobile_input_change_avatar {
+  visibility: hidden;
+  height: 100%;
+  width: 100%;
+
+  /* border: 2px solid greenyellow; */
+}
+
+.mobile_wrapper_user_info {
+  margin: 2rem 0;
+text-align: center;
+}
+
+.mobile_profile_userinfo_name {
+font-size: 2.5rem;
+font-weight: 600;
+}
+
+.mobile_profile_userinfo_email {
+  font-size: 1.6rem;
+  color: #707070;
+}
+
+.mobile_wrapper_form {
+  /* border: 2px solid blue; */
+  margin: 1rem auto;
+  width: 30rem;
+  /* flex-grow: 1; */
+
+}
+
+.mobile_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile_label_change_name, .mobile_label_change_email, .mobile_label_change_password {
+  color: #707070;
+  font-family: 'Open Sans';
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.mobile_input_change_name, .mobile_input_change_email, .mobile_input_change_password {
+  margin-bottom: 1rem;
+  border: none;
+  border-bottom: .14rem solid #707070;
+  font-family: inherit;
+  padding: .5rem;
+  font-size: 1.6rem;
+}
+
+.mobile_submit_changes {
+  margin: 2rem auto;
+  width: fit-content;
+  color: #ffffff;
+  background-color: #a307d5;
+  padding: .9rem 4.4rem;
+  border-radius: 3rem;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 1.7rem;
+  border: none;
+cursor: pointer;
+
+}
+
+.mobile_wrapper_buttons {
+  margin: 0 auto;
+  width: 30rem;
+ /* border: 1px solid red; */
+ color: #707070;
+ font-weight: 600;
+ font-size: 1.5rem;
+ 
+}
+
+.mobile_wrapper_darkmode {
+display: flex;
+justify-content: space-between;
+margin-bottom: 1rem;
+}
+
+.mobile_darkmode_text {
+
+}
+
+.mobile_button_darkmode {
+ font-size: 1.5rem;
+ color: #707070;
+ font-weight: 600;
+border: none;
+background-color: inherit;
+cursor: pointer;
+}
+
+/* DESKTOP STYLES */
+
+.desktop_container_settings {
+  /* border: 2px solid blue; */
+  background-color: var(--color-settings-bg-color);
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.desktop_wrapper_profile {
+  padding-top: 1rem;
+  /* border: 2px solid orange; */
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+
+}
+
+.desktop_wrapper__image {
+  /* border: 2px solid cyan; */
+  width: 25%;
+  margin: 0 auto;
+}
+
+.desktop_profile__image {
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+  width: 100%;
+}
+
+.desktop_profile__name, .desktop_profile__status {
+}
+
+.desktop_profile__name {
+  margin: .5rem 0 0 0 ;
+  /* border: 2px solid violet; */
+  font-size: 2rem;
+  color: var(--color-settings-user-name-color)
+}
+
+.desktop_profile__status {
+  /* border: 2px solid khaki; */
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: var(--color-settings-user-status-color)
+
+}
+
+.desktop_profile__status_indicator_online {
+  margin: 0;
+  display: inline-block;
+  width: .7rem;
+  height: .7rem;
+  border-radius: 50%;
+  background-color: var(--color-shared-status-indicator-online-color);
+}
+
+.desktop_profile__status_indicator_offline {
+  margin: 0;
+  display: inline-block;
+  width: .7rem;
+  height: .7rem;
+  border-radius: 50%;
+  background-color: var(--color-shared-status-indicator-offline-color);
+}
+
+.desktop_wrapper__settings {
+  /* border: 2px solid khaki; */
+  margin-top: 3rem;
+  padding-right: 2rem;
+  flex-grow: 1;
+
+}
+
+.desktop_settings_header {
+  color: var(--color-settings-settings-header-color);
+  border-bottom: 1px solid var(--color-border-color);
+  padding: 1rem 2rem ;
+  margin: 0;
+}
+
+.desktop_settings_option {
+  padding: 1rem 2rem ;
+  border-bottom: 1px solid var(--color-border-color);
+  cursor: pointer;
+  color: var(--color-settings-settings-options-color);
+}
+
+.desktop_wrapper__darkmode{
+width:25rem;
+ font-size: 1.3rem;
+ text-transform: uppercase;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin: 2rem auto;
+}
+
+.desktop_darkmode_label {
+  color: var(--color-settings-darkmode-text-color);
+  font-weight: 400;
+}
+
+.desktop_settings__button_logout {
+  width: 25rem;
+  border: none;
+  border-radius: 3rem;
+  background-color: var(--color-settings-log-out-bg-color);
+  border: none;
+  color: var(--color-shared-empty-state-color);
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 1.2rem;
+  padding: .8rem 0;
+  align-self: center;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.desktop_settings__button_logout:hover {
+  background-color: var(--color-settings-log-out-bg-hover-color);
+  color: #ffffff;
+}
+
