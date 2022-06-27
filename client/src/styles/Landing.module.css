@@ -17,8 +17,13 @@
   --offwhite: #f9effc;
 }
 
-.main__container {
+.main__container,
+.section__image,
+.image {
   display: flex;
+}
+
+.main__container {
   width: 100%;
   min-height: 100vh;
   background-color: var(--offwhite);
@@ -27,32 +32,30 @@
 /* IMAGE SECTION */
 
 .section__image {
-  display: flex;
   background-color: var(--purple);
   width: 35%;
 }
 .image {
-  display: flex;
   margin-left: 100px;
   width: 100%;
 }
 
 /* LOGO SECTION */
-.section__logo {
-  width: 65%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  padding-bottom: 60px;
-}
-
+.section__logo,
 .section__logo__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.section__logo {
+  width: 65%;
+  position: relative;
+  padding-bottom: 60px;
+}
+
+.section__logo__container {
   cursor: pointer;
 }
 
